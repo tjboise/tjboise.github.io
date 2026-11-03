@@ -1,0 +1,31 @@
+{{ define "head" }}
+  <link rel="stylesheet" href="{{ site.Params.jsdelivrMirror }}/npm/justifiedGallery@{{ site.Params.justifiedgalleryVersion }}/dist/css/justifiedGallery.min.css">
+  <link rel="stylesheet" href="{{ site.Params.jsdelivrMirror }}/npm/lightgallery@{{ site.Params.lightgalleryVersion }}/css/lightgallery-bundle.min.css">
+{{ end }}
+
+{{ define "main" }}
+  {{ .Content }}
+
+  {{- /* One section per static/data/photography/<year>.json, newest first. */}}
+  {{- $names := slice }}
+  {{- range os.ReadDir "static/data/photography" }}
+    {{- if strings.HasSuffix .Name ".json" }}
+      {{- $names = $names | append .Name }}
+    {{- end }}
+  {{- end }}
+
+  {{- range collections.Reverse (sort $names) }}
+    {{- $year := strings.TrimSuffix ".json" . }}
+    <h2 id="{{ $year }}">{{ $year }}</h2>
+    <div class="shortcode-gallery" id="gallery-{{ $year }}" data="/data/photography/{{ . }}"></div>
+  {{- end }}
+{{ end }}
+
+{{ define "scripts" }}
+  <script src="{{ site.Params.jsdelivrMirror }}/npm/jquery@{{ site.Params.jQueryVersion }}/dist/jquery.min.js"></script>
+  <script src="{{ site.Params.jsdelivrMirror }}/npm/justifiedGallery@{{ site.Params.justifiedgalleryVersion }}/dist/js/jquery.justifiedGallery.min.js"></script>
+  <script src="{{ site.Params.jsdelivrMirror }}/npm/lightgallery@{{ site.Params.lightgalleryVersion }}/lightgallery.min.js"></script>
+  <script src="{{ site.Params.jsdelivrMirror }}/npm/lightgallery@{{ site.Params.lightgalleryVersion }}/plugins/thumbnail/lg-thumbnail.min.js"></script>
+  <script src="{{ site.Params.jsdelivrMirror }}/npm/lightgallery@{{ site.Params.lightgalleryVersion }}/plugins/zoom/lg-zoom.min.js"></script>
+  <script src="/js/gallery.js"></script>
+{{ end }}

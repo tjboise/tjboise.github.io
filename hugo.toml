@@ -1,0 +1,31 @@
+baseURL = "https://YOUR-USERNAME.github.io/"
+locale = "en"
+title = "Your Name | Photography"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Photography"
+url = "/photography/"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 3
+
+[params]
+description = "Your Name's personal photography site"
+slogan = "Trying to live in the real moments."
+author = "Your Name"
+copyright = "Copyright &copy; {Year} Your Name"
+license = "Layout and styles adapted from leovan.me (CC BY-NC-SA 4.0)"
+licenseURL = "https://github.com/leovan/leovan.me"
+
+jsdelivrMirror = "https://cdn.jsdelivr.net"
+jQueryVersion = "3.7.1"
+justifiedgalleryVersion = "3.8.1"
+lightgalleryVersion = "2.7.2"

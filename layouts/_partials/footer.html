@@ -1,0 +1,11 @@
+<footer class="footer">
+  <div class="copyright">
+    <hr />
+    <span>{{ replace site.Params.copyright "{Year}" now.Year | safeHTML }}</span>
+    {{- with site.Params.license }}
+      <span class="copyright-separator">|</span>
+      <span class="copyright-line-break"><br /></span>
+      <a href="{{ site.Params.licenseURL }}" target="_blank" rel="noopener">{{ . }}</a>
+    {{- end }}
+  </div>
+</footer>

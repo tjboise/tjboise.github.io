@@ -1,0 +1,6 @@
+{{- if not .IsHome }}
+  <div class="post-meta">
+    <div class="post-title">{{ .Title | markdownify }}</div>
+  </div>
+  <hr />
+{{- end }}

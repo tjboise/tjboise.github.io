@@ -1,0 +1,33 @@
+{{- $currentPage := . }}
+
+<div class="menu-left">
+  <div class="avatar"></div>
+  <div class="slogan">
+    <p>{{ site.Params.slogan }}</p>
+  </div>
+  <ul>
+    {{- range site.Menus.main }}
+      <li {{- if eq .URL $currentPage.RelPermalink }} class="active" {{- end }}>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+    {{- end }}
+  </ul>
+  <div class="empty"></div>
+  <div class="toggle-theme-left">
+    <button class="toggle-theme-button" type="button" aria-label="Toggle theme">
+      <span class="theme-icon theme-icon-light">&#9728;</span>
+      <span class="theme-icon theme-icon-dark">&#9790;</span>
+    </button>
+  </div>
+</div>
+
+<div class="menu-top">
+  <div class="menu-container">
+    {{- range site.Menus.main }}
+      <div class="menu-item {{- if eq .URL $currentPage.RelPermalink }} active {{- end }}">
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </div>
+    {{- end }}
+    <button class="menu-item toggle-theme-button" type="button" aria-label="Toggle theme">&#9728;&#9790;</button>
+  </div>
+</div>

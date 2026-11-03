@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ site.Params.description }}">
+    <meta property="og:title" content="{{ .Title }}">
+    <meta property="og:description" content="{{ site.Params.description }}">
+    <meta property="og:url" content="{{ .Permalink }}">
+    <link rel="icon" href="/images/web/avatar.svg" type="image/svg+xml">
+    <script>
+      (function () {
+        var theme = null;
+        try { theme = localStorage.getItem("theme"); } catch (e) {}
+        if (!theme) {
+          theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.classList.toggle("dark", theme === "dark");
+      })();
+    </script>
+    <link rel="stylesheet" href="/css/main.css">
+    {{ block "head" . }}{{ end }}
+  </head>
+  <body>
+    <div class="body">
+      {{ partial "menu.html" . }}
+      <div class="content">
+        {{ partial "header.html" . }}
+        {{ block "main" . }}{{ end }}
+        {{ partial "footer.html" . }}
+      </div>
+    </div>
+    <script src="/js/theme.js"></script>
+    {{ block "scripts" . }}{{ end }}
+  </body>
+</html>

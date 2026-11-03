@@ -118,8 +118,8 @@ li { margin: 0.25rem 0; }
   height: 128px;
   min-height: 128px;
   background-color: var(--color-html-foreground);
-  -webkit-mask: url(/images/web/avatar.svg) no-repeat right / contain;
-  mask: url(/images/web/avatar.svg) no-repeat right / contain;
+  -webkit-mask: url(/images/web/avatar.png) no-repeat right / contain;
+  mask: url(/images/web/avatar.png) no-repeat right / contain;
 }
 .menu-left a { text-decoration-line: none; }
 .menu-left .active a { text-decoration-line: underline; }

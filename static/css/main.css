@@ -112,11 +112,14 @@ li { margin: 0.25rem 0; }
 }
 
 /* left menu */
+/* The avatar is a mask: any image with a transparent background works, and it
+   is drawn in the text color (black in light mode, white in dark mode). */
 .menu-left .avatar {
   height: 128px;
   min-height: 128px;
-  background: url(/images/web/avatar.svg) no-repeat right;
-  background-size: contain;
+  background-color: var(--color-html-foreground);
+  -webkit-mask: url(/images/web/avatar.svg) no-repeat right / contain;
+  mask: url(/images/web/avatar.svg) no-repeat right / contain;
 }
 .menu-left a { text-decoration-line: none; }
 .menu-left .active a { text-decoration-line: underline; }

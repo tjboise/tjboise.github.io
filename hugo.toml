@@ -1,7 +1,7 @@
 baseURL = "https://tjboise.github.io/"
 locale = "en"
 disableKinds = ["taxonomy", "term"]
-title = "Your Name | Photography"
+title = "Tianjie Zhang | Photography"
 
 [[menu.main]]
 name = "Home"
@@ -19,10 +19,10 @@ url = "/about/"
 weight = 3
 
 [params]
-description = "Your Name's personal photography site"
+description = "Tianjie Zhang's personal photography site"
 slogan = "Trying to live in the real moments."
-author = "Your Name"
-copyright = "Copyright &copy; {Year} Your Name"
+author = "Tianjie Zhang"
+copyright = "Copyright &copy; {Year} Tianjie Zhang"
 license = "Layout and styles adapted from leovan.me (CC BY-NC-SA 4.0)"
 licenseURL = "https://github.com/leovan/leovan.me"
 

@@ -19,16 +19,22 @@
   },
   "items": [
     {
-      "alt": "Nashville",
-      "download": "Nashville.jpg",
-      "src": "/images/photography/2026-07-04-nashvillejpg.jpg",
-      "thumb": "/images/photography/2026-07-04-nashvillejpg-thumbnail.jpg"
+      "alt": "stanley, ID",
+      "download": "stanley, ID.jpg",
+      "src": "/images/photography/2026-04-18-stanley,-id.jpg",
+      "thumb": "/images/photography/2026-04-18-stanley,-id-thumbnail.jpg"
     },
     {
-      "alt": "Princeton",
-      "download": "Princeton.jpg",
-      "src": "/images/photography/2026-10-25-princeton.jpg",
-      "thumb": "/images/photography/2026-10-25-princeton-thumbnail.jpg"
+      "alt": "Nashville, TN",
+      "download": "Nashville, TN.jpg",
+      "src": "/images/photography/2026-07-04-nashville,-tn.jpg",
+      "thumb": "/images/photography/2026-07-04-nashville,-tn-thumbnail.jpg"
+    },
+    {
+      "alt": "Princeton, NJ",
+      "download": "Princeton, NJ.jpg",
+      "src": "/images/photography/2026-10-25-princeton,-nj.jpg",
+      "thumb": "/images/photography/2026-10-25-princeton,-nj-thumbnail.jpg"
     }
   ]
 }

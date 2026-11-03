@@ -1,5 +1,6 @@
 baseURL = "https://tjboise.github.io/"
 locale = "en"
+disableKinds = ["taxonomy", "term"]
 title = "Your Name | Photography"
 
 [[menu.main]]

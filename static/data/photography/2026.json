@@ -1,0 +1,34 @@
+{
+  "justifiedGalleryOptions": {
+    "rowHeight": 160,
+    "maxRowHeight": 320,
+    "captions": true,
+    "captionSettings": {
+      "animationDuration": 400,
+      "visibleOpacity": 0.8,
+      "nonVisibleOpacity": 0.0
+    },
+    "cssAnimation": false,
+    "lastRow": "justify",
+    "margins": 6
+  },
+  "lightGalleryOptions": {
+    "autoplayFirstVideo": false,
+    "iframeMaxHeight": "90%",
+    "iframeMaxWidth": "30%"
+  },
+  "items": [
+    {
+      "alt": "Nashville",
+      "download": "Nashville.jpg",
+      "src": "/images/photography/2026-07-04-nashvillejpg.jpg",
+      "thumb": "/images/photography/2026-07-04-nashvillejpg-thumbnail.jpg"
+    },
+    {
+      "alt": "Princeton",
+      "download": "Princeton.jpg",
+      "src": "/images/photography/2026-10-25-princeton.jpg",
+      "thumb": "/images/photography/2026-10-25-princeton-thumbnail.jpg"
+    }
+  ]
+}

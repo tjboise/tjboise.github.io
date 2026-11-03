@@ -10,6 +10,8 @@ Output (the year comes from EXIF DateTimeOriginal, else the file's modified time
     static/data/photography/<year>.json
 """
 
+from __future__ import annotations
+
 import argparse
 import json
 from datetime import datetime

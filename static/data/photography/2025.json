@@ -1,0 +1,28 @@
+{
+  "justifiedGalleryOptions": {
+    "rowHeight": 160,
+    "maxRowHeight": 320,
+    "captions": true,
+    "captionSettings": {
+      "animationDuration": 400,
+      "visibleOpacity": 0.8,
+      "nonVisibleOpacity": 0.0
+    },
+    "cssAnimation": false,
+    "lastRow": "justify",
+    "margins": 6
+  },
+  "lightGalleryOptions": {
+    "autoplayFirstVideo": false,
+    "iframeMaxHeight": "90%",
+    "iframeMaxWidth": "30%"
+  },
+  "items": [
+    {
+      "alt": "SLC, UT",
+      "download": "SLC, UT.jpg",
+      "src": "/images/photography/2025-12-26-slc,-ut.jpg",
+      "thumb": "/images/photography/2025-12-26-slc,-ut-thumbnail.jpg"
+    }
+  ]
+}

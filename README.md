@@ -1,5 +1,7 @@
 # Photography site
 
+Live site: https://tjboise.github.io/
+
 A small Hugo site: sidebar layout, a justified photo grid and a lightbox. The layout and styles are adapted from [leovan/leovan.me](https://github.com/leovan/leovan.me) (CC BY-NC-SA 4.0), so keep that credit and share under the same license.
 
 ## Add photos
